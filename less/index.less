@@ -65,6 +65,13 @@ html, body {
 @main-color: #212832;
 @accent-color: rgba(200,170,139,1);
 
+
+.section-title(){
+	font-weight: bold;
+	font-size: 1.1rem;
+	text-transform: uppercase;
+}
+
 // general styles
 
 body{
@@ -123,7 +130,20 @@ header{
 			font-weight: 300;
 		}
 	}
-	
+}
 
+.summary{
+	display: flex;
+	justify-content: space-between;
 
+	h2{
+		.section-title();
+	}
+
+	p{
+		font-weight: 300;
+		font-size: .9rem;
+		width: 70%;
+		line-height: 1.5;
+	}
 }

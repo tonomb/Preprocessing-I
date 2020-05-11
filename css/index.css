@@ -205,3 +205,18 @@ header .header-content i p {
   margin: 0 3%;
   font-weight: 300;
 }
+.summary {
+  display: flex;
+  justify-content: space-between;
+}
+.summary h2 {
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+.summary p {
+  font-weight: 300;
+  font-size: 0.9rem;
+  width: 70%;
+  line-height: 1.5;
+}
