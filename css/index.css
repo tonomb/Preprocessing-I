@@ -156,10 +156,6 @@ body {
   font-display: swap;
   src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN7rg-VQ.ttf) format('truetype');
 }
-.section-display {
-  display: flex;
-  justify-content: space-between;
-}
 body {
   background: #edf0f2;
   font-family: 'Open Sans', sans-serif;
@@ -173,6 +169,12 @@ p {
   margin: 2.5% auto 0;
   background: white;
   padding: 2% 4%;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    margin: 0;
+  }
 }
 header {
   display: flex;
@@ -228,42 +230,42 @@ header .header-content i p {
   width: 75%;
   line-height: 1.5;
 }
-.carrer {
+.career {
   display: flex;
   justify-content: space-between;
 }
-.carrer h2 {
+.career h2 {
   font-weight: bold;
   font-size: 1.1rem;
   text-transform: uppercase;
 }
-.carrer .carrer-content {
+.career .career-content {
   width: 75%;
   border-top: 4px solid #c8aa8b;
   padding: 3% 0;
   display: flex;
   flex-wrap: wrap;
 }
-.carrer .carrer-content-section {
+.career .career-content-section {
   display: flex;
   width: 100%;
   margin: 2% 0;
 }
-.carrer .carrer-content-section h4 {
+.career .career-content-section h4 {
   text-transform: uppercase;
   font-size: 0.9rem;
   font-weight: bold;
 }
-.carrer .carrer-content-section h5 {
+.career .career-content-section h5 {
   color: #c8aa8b;
   text-transform: uppercase;
   font-size: 0.8rem;
 }
-.carrer .carrer-content-section h4,
-.carrer .carrer-content-section h5 {
+.career .career-content-section h4,
+.career .career-content-section h5 {
   margin-bottom: 10px;
 }
-.carrer .carrer-content-section li {
+.career .career-content-section li {
   list-style-type: disc;
   list-style-position: outside;
   font-weight: 300;
@@ -273,15 +275,15 @@ header .header-content i p {
   margin-left: 18px;
   line-height: 1.2;
 }
-.carrer .carrer-content-section h6 {
+.career .career-content-section h6 {
   text-transform: capitalize;
   font-size: 0.9rem;
   line-height: 1.5;
 }
-.carrer .carrer-content-section .content-right {
+.career .career-content-section .content-right {
   width: 70%;
   padding-left: 5%;
 }
-.carrer .carrer-content-section .content-left {
+.career .career-content-section .content-left {
   width: 30%;
 }
