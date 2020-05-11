@@ -86,7 +86,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 62.5%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -129,8 +129,79 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
+  max-width: 100%;
 }
 html,
 body {
   height: 100%;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN_r8-VQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-U1Ug.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN7rg-VQ.ttf) format('truetype');
+}
+body {
+  background: #edf0f2;
+  font-family: 'Open Sans', sans-serif;
+  color: #212832;
+}
+.container {
+  width: 40%;
+  margin: 2% auto 0;
+  height: 90vh;
+  background: white;
+  padding: 4%;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header .profile-pic {
+  width: 100px;
+}
+header .profile-pic img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100%;
+}
+header .header-content {
+  width: 70%;
+  margin-bottom: 8%;
+}
+header .header-content h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 2% 0;
+}
+header .header-content h2 {
+  font-size: 1.4rem;
+  color: #c8aa8b;
+  margin: 2% 0;
+  margin-bottom: 5%;
+}
+header .header-content i {
+  color: #c8aa8b;
+  display: inline;
+}
+header .header-content i p {
+  color: #212832;
+  display: inline;
+  margin: 0 3%;
+  font-weight: 300;
 }

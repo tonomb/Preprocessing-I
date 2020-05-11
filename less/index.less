@@ -20,7 +20,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -50,11 +50,80 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	max-width: 100%;
 }
 
 html, body {
     height: 100%;
 }
 
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+//variables 
+@main-color: #212832;
+@accent-color: rgba(200,170,139,1);
+
 // general styles
+
+body{
+	background: rgba(237, 240, 242, 1);
+	font-family: 'Open Sans', sans-serif;
+	color: @main-color;
+}
+.container{
+	width: 40%;
+	margin: 2% auto 0;
+	height: 90vh;
+	background: white;
+	padding: 4%;
+
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+
+	.profile-pic{
+		width: 100px;
+
+		img{
+			border-radius: 50%;
+			height: 100px;
+			width: 100%;
+		}
+	}
+
+	.header-content{
+			width: 70%;
+			margin-bottom: 8%;
+		h1{
+			font-size:2rem;
+			font-weight: bold;
+			margin: 2% 0;
+		}
+	
+		h2{
+			font-size: 1.4rem;
+			color: @accent-color;
+			margin: 2% 0;
+			margin-bottom: 5%;
+		}
+
+		i{
+			color: @accent-color;
+			display: inline;
+		}
+
+		i p{
+			color: @main-color;
+			display: inline;
+			margin: 0 3%;
+			font-weight: 300;
+		}
+	}
+	
+
+
+}
