@@ -63,6 +63,7 @@ html, body {
 
 //variables 
 @main-color: #212832;
+@text-secondary: #424B59;
 @accent-color: rgba(200,170,139,1);
 
 
@@ -84,12 +85,15 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	color: @main-color;
 }
+
+p{
+	color: @text-secondary;
+}
 .container{
 	width: 40%;
-	margin: 2% auto 0;
-	height: 90vh;
+	margin: 2.5% auto 0;
 	background: white;
-	padding: 4%;
+	padding: 2% 4%;
 
 }
 
@@ -208,10 +212,7 @@ header{
 
 		.content-right{
 			width: 70%;
-
-			li{
-				padding: -10px;
-			}
+			padding-left: 5%;
 		}
 
 		.content-left{
@@ -219,3 +220,5 @@ header{
 		}
 	}
 }
+
+

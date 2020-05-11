@@ -165,12 +165,14 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #212832;
 }
+p {
+  color: #424B59;
+}
 .container {
   width: 40%;
-  margin: 2% auto 0;
-  height: 90vh;
+  margin: 2.5% auto 0;
   background: white;
-  padding: 4%;
+  padding: 2% 4%;
 }
 header {
   display: flex;
@@ -277,9 +279,7 @@ header .header-content i p {
 }
 .carrer .carrer-content-section .content-right {
   width: 70%;
-}
-.carrer .carrer-content-section .content-right li {
-  padding: -10px;
+  padding-left: 5%;
 }
 .carrer .carrer-content-section .content-left {
   width: 30%;
