@@ -156,6 +156,10 @@ body {
   font-display: swap;
   src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN7rg-VQ.ttf) format('truetype');
 }
+.section-display {
+  display: flex;
+  justify-content: space-between;
+}
 body {
   background: #edf0f2;
   font-family: 'Open Sans', sans-serif;
@@ -181,7 +185,7 @@ header .profile-pic img {
   width: 100%;
 }
 header .header-content {
-  width: 70%;
+  width: 75%;
   margin-bottom: 8%;
 }
 header .header-content h1 {
@@ -208,6 +212,7 @@ header .header-content i p {
 .summary {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 5%;
 }
 .summary h2 {
   font-weight: bold;
@@ -217,6 +222,65 @@ header .header-content i p {
 .summary p {
   font-weight: 300;
   font-size: 0.9rem;
-  width: 70%;
+  width: 75%;
   line-height: 1.5;
+}
+.carrer {
+  display: flex;
+  justify-content: space-between;
+}
+.carrer h2 {
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+.carrer .carrer-content {
+  width: 75%;
+  border-top: 4px solid #c8aa8b;
+  padding: 3% 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.carrer .carrer-content-section {
+  display: flex;
+  width: 100%;
+  margin: 2% 0;
+}
+.carrer .carrer-content-section h4 {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.carrer .carrer-content-section h5 {
+  color: #c8aa8b;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.carrer .carrer-content-section h4,
+.carrer .carrer-content-section h5 {
+  margin-bottom: 10px;
+}
+.carrer .carrer-content-section li {
+  list-style-type: disc;
+  list-style-position: outside;
+  font-weight: 300;
+  font-size: 0.8rem;
+  margin: 2% 0;
+  padding: 0;
+  margin-left: 18px;
+  line-height: 1.2;
+}
+.carrer .carrer-content-section h6 {
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.carrer .carrer-content-section .content-right {
+  width: 70%;
+}
+.carrer .carrer-content-section .content-right li {
+  padding: -10px;
+}
+.carrer .carrer-content-section .content-left {
+  width: 30%;
 }

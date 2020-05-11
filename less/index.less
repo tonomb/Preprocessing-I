@@ -72,6 +72,11 @@ html, body {
 	text-transform: uppercase;
 }
 
+.section-display{
+	display: flex;
+	justify-content: space-between;
+}
+
 // general styles
 
 body{
@@ -103,7 +108,7 @@ header{
 	}
 
 	.header-content{
-			width: 70%;
+			width: 75%;
 			margin-bottom: 8%;
 		h1{
 			font-size:2rem;
@@ -133,8 +138,8 @@ header{
 }
 
 .summary{
-	display: flex;
-	justify-content: space-between;
+	.section-display();
+	margin-bottom: 5%;
 
 	h2{
 		.section-title();
@@ -143,7 +148,74 @@ header{
 	p{
 		font-weight: 300;
 		font-size: .9rem;
-		width: 70%;
+		width: 75%;
 		line-height: 1.5;
+	}
+}
+
+.carrer{
+	.section-display();
+
+	h2{
+		.section-title();
+	}
+	.carrer-content{
+		width: 75%;
+		border-top: 4px solid @accent-color;
+		padding: 3% 0;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.carrer-content-section{
+		display:flex;
+		width: 100%;
+		margin: 2% 0;
+
+		h4{
+			text-transform: uppercase;
+			font-size: .9rem;
+			font-weight: bold;
+		}
+
+		h5{
+			color: @accent-color;
+			text-transform: uppercase;
+			font-size: .8rem;
+		}
+
+		h4, h5{
+			margin-bottom: 10px;
+		}
+
+		li{
+			list-style-type: disc;
+			list-style-position: outside;
+			font-weight: 300;
+			font-size: .8rem;
+			margin: 2% 0;
+			padding: 0;
+			margin-left: 18px;
+			line-height: 1.2;
+		}
+
+		h6{
+			text-transform: capitalize;
+			font-size: .9rem;
+			line-height: 1.5;
+		}
+	
+
+		.content-right{
+			width: 70%;
+
+			li{
+				padding: -10px;
+			}
+		}
+
+		.content-left{
+			width: 30%;
+		}
 	}
 }
