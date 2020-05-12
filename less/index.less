@@ -20,7 +20,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -50,10 +50,182 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	max-width: 100%;
 }
 
 html, body {
     height: 100%;
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+//variables 
+@main-color: #212832;
+@text-secondary: #424B59;
+@accent-color: rgba(200,170,139,1);
+
+
+.section-title(){
+	font-weight: bold;
+	font-size: 1.1rem;
+	text-transform: uppercase;
+}
+
+.section-display(){
+	display: flex;
+	justify-content: space-between;
+}
+
+// general styles
+
+body{
+	background: rgba(237, 240, 242, 1);
+	font-family: 'Open Sans', sans-serif;
+	color: @main-color;
+}
+
+p{
+	color: @text-secondary;
+}
+
+.container{
+	width: 40%;
+	margin: 2.5% auto 0;
+	background: white;
+	padding: 2% 4%;
+
+	@media(max-width: 500px) {
+		width: 100%;
+		margin: 0;
+	}
+
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+
+	.profile-pic{
+		width: 100px;
+
+		img{
+			border-radius: 50%;
+			height: 100px;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.header-content{
+			width: 75%;
+			margin-bottom: 8%;
+		h1{
+			font-size:2rem;
+			font-weight: bold;
+			margin: 2% 0;
+		}
+	
+		h2{
+			font-size: 1.4rem;
+			color: @accent-color;
+			margin: 2% 0;
+			margin-bottom: 5%;
+		}
+
+		i{
+			color: @accent-color;
+			display: inline;
+		}
+
+		i p{
+			color: @main-color;
+			display: inline;
+			margin: 0 3%;
+			font-weight: 300;
+		}
+	}
+}
+
+.summary{
+	.section-display();
+	margin-bottom: 5%;
+
+	h2{
+		.section-title();
+	}
+
+	p{
+		font-weight: 300;
+		font-size: .9rem;
+		width: 75%;
+		line-height: 1.5;
+	}
+}
+
+.career{
+	.section-display();
+
+	h2{
+		.section-title();
+	}
+	.career-content{
+		width: 75%;
+		border-top: 4px solid @accent-color;
+		padding: 3% 0;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.career-content-section{
+		display:flex;
+		width: 100%;
+		margin: 2% 0;
+
+		h4{
+			text-transform: uppercase;
+			font-size: .9rem;
+			font-weight: bold;
+		}
+
+		h5{
+			color: @accent-color;
+			text-transform: uppercase;
+			font-size: .8rem;
+		}
+
+		h4, h5{
+			margin-bottom: 10px;
+		}
+
+		li{
+			list-style-type: disc;
+			list-style-position: outside;
+			font-weight: 300;
+			font-size: .8rem;
+			margin: 2% 0;
+			padding: 0;
+			margin-left: 18px;
+			line-height: 1.2;
+		}
+
+		h6{
+			text-transform: capitalize;
+			font-size: .9rem;
+			line-height: 1.5;
+		}
+	
+
+		.content-right{
+			width: 70%;
+			padding-left: 5%;
+		}
+
+		.content-left{
+			width: 30%;
+		}
+	}
+}
+
 

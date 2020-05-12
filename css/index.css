@@ -1,1 +1,289 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+html,
+body {
+  height: 100%;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN_r8-VQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-U1Ug.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN7rg-VQ.ttf) format('truetype');
+}
+body {
+  background: #edf0f2;
+  font-family: 'Open Sans', sans-serif;
+  color: #212832;
+}
+p {
+  color: #424B59;
+}
+.container {
+  width: 40%;
+  margin: 2.5% auto 0;
+  background: white;
+  padding: 2% 4%;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header .profile-pic {
+  width: 100px;
+}
+header .profile-pic img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100%;
+  object-fit: cover;
+}
+header .header-content {
+  width: 75%;
+  margin-bottom: 8%;
+}
+header .header-content h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 2% 0;
+}
+header .header-content h2 {
+  font-size: 1.4rem;
+  color: #c8aa8b;
+  margin: 2% 0;
+  margin-bottom: 5%;
+}
+header .header-content i {
+  color: #c8aa8b;
+  display: inline;
+}
+header .header-content i p {
+  color: #212832;
+  display: inline;
+  margin: 0 3%;
+  font-weight: 300;
+}
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+.summary h2 {
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+.summary p {
+  font-weight: 300;
+  font-size: 0.9rem;
+  width: 75%;
+  line-height: 1.5;
+}
+.career {
+  display: flex;
+  justify-content: space-between;
+}
+.career h2 {
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+.career .career-content {
+  width: 75%;
+  border-top: 4px solid #c8aa8b;
+  padding: 3% 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.career .career-content-section {
+  display: flex;
+  width: 100%;
+  margin: 2% 0;
+}
+.career .career-content-section h4 {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.career .career-content-section h5 {
+  color: #c8aa8b;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.career .career-content-section h4,
+.career .career-content-section h5 {
+  margin-bottom: 10px;
+}
+.career .career-content-section li {
+  list-style-type: disc;
+  list-style-position: outside;
+  font-weight: 300;
+  font-size: 0.8rem;
+  margin: 2% 0;
+  padding: 0;
+  margin-left: 18px;
+  line-height: 1.2;
+}
+.career .career-content-section h6 {
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.career .career-content-section .content-right {
+  width: 70%;
+  padding-left: 5%;
+}
+.career .career-content-section .content-left {
+  width: 30%;
+}
